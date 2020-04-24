@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	background-color: #f2f1ee;
+
+}
+
+.logo {
+  position: fixed;
+  height: 100px;
+  width: 115px;
+    background-image:
+    url("images/titlelogo.png");
+    background-size: 100%;
+    top:5px;
+    right: 85px;
+  z-index: 20;
+
+}
+
+.abt {
+  position: fixed;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #DE6E64;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  top: 57px;
+  left: 6vw;
+  z-index: 10;
+    webkit-transition: all 500ms ease;
+  moz-transition: all 500ms ease;
+  ms-transition: all 500ms ease;
+  o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.abt:hover {
+  color: #1D7FCA;
+
+}
+
+
+
+.container {
+	position: relative;
+	height: 80vh;
+  width: 88vw;
+  left: 6vw;
+	box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  top: 13vh;
+  opacity: 1;
+/*  border-radius: 30px;*/
+
+}
+
+
+@media only screen and (max-height: 800px) {
+
+.container {
+  top: 14vh;
+  height: 78vh;
+}
+
+}
+
+
+
+.overlay {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  background-color: #f2f1ee;
+  transition: 0.5s ease;
+  animation: fadeInAnimation ease 2.5s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+}
+
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 1;
+                z-index: 2;
+            } 
+            100% { 
+                opacity: 0; 
+                z-index: 0;
+            } 
+        } 
+
+
+
+.image {
+
+text-decoration: none;
+  width: auto;
+  overflow: hidden;
+  flex-grow: 1;
+  transition: .5s;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.feature {
+	position: absolute;
+	background-color: #DE6E64;
+	font-family: Helvetica;
+  	color: #f2f1ee;
+ 	  text-transform: uppercase;
+  	font-size: 14px;
+  	letter-spacing: 2px;
+  	writing-mode: tb-rl;
+  	transform: rotate(-180deg);
+  	text-align: center;
+    padding: 10px;
+    height: 100%;
+    transition: .5s;
+}
+
+.image:hover {
+	flex-grow: 3;
+	max-width: 100%;
+}
+
+.image:hover .feature{
+	background-color: #1D7FCA;
+}
+
+
+#image1 {
+	background-image:
+  	url("images/rockefeller.jpg");
+}
+
+
+#image2 {
+	background-image:
+  	url("images/coffee.jpg");
+
+}
+
+#image3 {
+	background-image:
+  	url("images/florida.jpg");
+}
+
+#image4 {
+	background-image:
+  	url("images/law.jpg");
+}
+
+#image5 {
+	background-image:
+  	url("images/larry.jpg");
+}
+
+#image6 {
+	background-image:
+  	url("images/longisland.jpg");
+}
+
+#image7 {
+	background-image:
+  	url("images/huge.jpg");
+}
+
+#image8 {
+	background-image:
+  	url("images/thirty.jpg");
+}
+
+#image9 {
+	background-image:
+  	url("images/rockefeller.jpg");
+}
